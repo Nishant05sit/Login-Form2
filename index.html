@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MY INFO</title>
         <link rel ="stylesheet" href="./style.css"/>
-        
-   </head>
+    </head>
    <body>
-       <h1>Login Form</h1>
+        <h1>Login Form</h1>
+       
        <div id="form">
             <form>
                 <label>First Name</label>
@@ -27,6 +27,24 @@
                 <input type ="submit" value=" submit">
             </form>
        </div>
+       <script>
+           let form = document.getElementById('form');
+           form.addEventListener('submit', function(event){
+              // event.preventDefault();
+               let fname = document.getElementById('fname').value;
+               document.write(fname);
+               let lName = document.getElementById('Lname').value;
+               document.write(lName);
+               let mobile_no = document.getElementById('mobile no').value;
+               document.write(mobile_no);
+               let email = document.getElementById('email').value;
+               document.write(email);
+               let password = document.getElementById('password').value;
+               document.write(password);
+               let age = document.getElementById('age').value;
+               document.write(age);
+            })
+       </script>
         
     </body>
 </html>
